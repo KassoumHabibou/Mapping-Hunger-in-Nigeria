@@ -1,0 +1,17 @@
+Habibou
+	: - World Pop
+	  - Malnutrition rate	
+     	  - Physical elevation
+	 - Malaria incidence
+	- wind speed potential
+	- distance to coast
+	- distance to water
+	  - DMSP-OLS NL  + Annual VIIRS 
+		- world pop (compute the proxies of the nbr of piexls that are used to compute th population estimate (pop count/size of the admin in km2).
+
+Hema:
+	- 14 indices spectro
+	- Ozone Concentration
+
+
+links: DeepKreaging: https://github.com/aleksada/DeepKriging
