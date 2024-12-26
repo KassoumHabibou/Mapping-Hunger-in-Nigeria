@@ -33,7 +33,7 @@ This repository contains the replication codes for a spatial machine learning an
 ## Installation
 1. Clone this repository:
 ```bash
-git clone https://github.com/KassoumHabibou/predicting-undernutrition-rate-Nigeria.git
+git clone https://github.com/KassoumHabibou/Mapping-Hunger-in-Nigeria.git
 cd nigeria-stunting-prediction
 ```
 
