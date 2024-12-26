@@ -21,7 +21,7 @@ lapply(required_packages, library, character.only = TRUE)
 
 ######################## Importing datasets #################################
 # Read DDI file and micro data using ipumsr package
-ddi <- read_ipums_ddi("./input/data/NDHS/idhs_00009.xml")
+ddi <- read_ipums_ddi("./input/data/NDHS/idhs_00010.xml")
 df <- read_ipums_micro(ddi)
 
 # Select relevant columns from the dataframe
@@ -85,14 +85,16 @@ df <- df %>%
 
 # Selecting some variables
 df <- df %>%
-  select(YEAR, survey, data_source, HWHAZWHO, is_na_HAZ)
+  select(DHSID, YEAR, survey, data_source, HWHAZWHO, is_na_HAZ, KIDWT)
 
 # Rename the variables names
 
 df <- df %>%
-  rename(survey_year = YEAR, 
+  rename(dhsid = DHSID,
+         survey_year = YEAR, 
          haz_who = HWHAZWHO, 
-         is_na_haz = is_na_HAZ)
+         is_na_haz = is_na_HAZ,
+         kid_weight = KIDWT)
 
 ######################## Saving the final dataset and removing all objects ############
 
